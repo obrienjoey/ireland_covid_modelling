@@ -53,8 +53,8 @@ nt <- length(daygrid) # total number of time-steps
 endT <- floor(timestep*nt) # final time
 
 ### Scenario parameters
-scenarioR0 <- 0.5 # assume Rt takes this value from today
-endTscenario <- endT + 12*7 # run scenario for 12 weeks beyond today
+scenarioR0 <- 0.5 # assume Rt takes this value from day endT to day endTscenario
+endTscenario <- endT + 12*7 # run scenario for 12 weeks beyond day endT
 
 ### Now create matrices to hold the daily counts in each case
 dailyCcF_samples <- matrix(0, nrow = endTscenario, ncol = no_samples)
@@ -127,7 +127,7 @@ for(sample in 1:no_samples){ # for each sample curve
   CcFn <- 0
   
   n <- 0
-  # solve forward from time 0 to today
+  # solve forward from time 0 to today (day endT)
   for(day in 1:(endT)){# loop over days
     for(day_time_step in 1:steps_in_day){# loop over timesteps in days
       n <- n + 1

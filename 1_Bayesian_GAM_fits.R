@@ -46,7 +46,7 @@ save(fits_br,file=filename)
 daygrid <- seq(0,nrow(case_data)-1,by=timestep)
 predmat <- posterior_epred(fits_br,newdata=list(days_in=daygrid))
 
-no_samples <- 1000 # number of draws from posterior # (JOB: in the note this is 10000?)
+no_samples <- 1000 # number of draws from posterior # 
 ind <- sample(1:nrow(predmat),size=no_samples)
 paths <- t(predmat)[,ind] # samples drawn
 nt <- length(daygrid) # total number of time-steps

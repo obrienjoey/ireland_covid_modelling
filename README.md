@@ -7,7 +7,7 @@ Using daily Covid-19 case data, the code fits a generalized additive model (GAM)
 There are three scripts which must be run in order
 
 1. 0_source.R - loads required libraries and defines the functions used throughout the analysis.
-2. 1_Bayesian_GAM_fits.R - fits the GAM to a provided dataframe of case date via a Bayesian framework before simulating 1000 realizations of the SEIR process using draws from    the posterior distribution. These simulations are run for a provided number of days in the future to generate the future sizes of the compartments in the SEIR model.
+2. 1_Bayesian_GAM_fits.R - fits the GAM to a provided dataframe of case date via a Bayesian framework before simulating 1000 realizations of the SEIR process using draws from    the posterior distribution. These simulations are run for a specified number of days in the future to generate the future sizes of the compartments in the SEIR model, assuming that the reproduction number remains constant at the value given by parameter scenarioR0.
 3. 2_Bayesian_GAM_plots.R - returns the plots of the resulting time series.
 
 The code runs a scenario from the date 11/11/2020, until a specified time in the future. The input data supplied is a daily time-series or the number of national cases up until that point.  

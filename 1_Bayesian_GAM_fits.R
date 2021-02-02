@@ -21,7 +21,7 @@ no_knots <- 10 # number of knots for the Bayesian GAM
 
 ### actual case data
 
-file_in <- 'case_data_IRL_20201111.csv'
+file_in <- 'case_data_IRL_20201111.csv' # filename must have this format
 file_date <- parse_number(file_in)
 case_data <- read_csv(here('Input_data', file_in))
 

@@ -1,6 +1,6 @@
 # ireland_covid_modelling
 
-2/2/21 - Code associated with [*A population-level SEIR model for COVID-19 scenarios (updated)*](https://assets.gov.ie/74595/e10ea7bb423c4110839e2f30c3817dc7.pdf) by James P. Gleeson, Thomas Brendan Murphy, Joseph D. O'Brien, and David J. P. O'Sullivan.
+2/2/21 - Code associated with [*A population-level SEIR model for COVID-19 scenarios (updated)*](https://assets.gov.ie/122667/8379f0cc-5be3-4c89-9a1e-3b7328ae03af.pdf) by James P. Gleeson, Thomas Brendan Murphy, Joseph D. O'Brien, and David J. P. O'Sullivan.
 
 Using daily Covid-19 case data, the code fits a generalized additive model (GAM) via a Bayesian framework before running simulations of the population-level susceptible-exposed-infected-removed (SEIR) model that is used by the Irish Epidemiological Modelling Advisory Group (IEMAG) reporting to the National Public Health Emergency Team (NPHET).
 
